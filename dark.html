@@ -66,6 +66,12 @@
         .login-container button:hover {
             box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff;
         }
+
+        @media (max-width: 768px) {
+    .slider-container {
+        width: 95%;
+    }
+    }
     </style>
 </head>
 
@@ -73,8 +79,12 @@
     <div class="login-container">
         <h2>Login</h2>
         <form>
+            <div class="input-box">
             <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
             <input type="password" placeholder="Password" required>
+            </div>
             <button type="submit">Login</button>
         </form>
     </div>
